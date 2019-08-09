@@ -2,5 +2,13 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="GoSnakeCaseUsage" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="GoUnusedCallResult" enabled="true" level="WARNING" enabled_by_default="true">
+      <functions>
+        <function importPath="errors" name="New" />
+        <function importPath="fmt" name="Sprintf" />
+        <function importPath="fmt" name="Sprint" />
+        <function importPath="sort" name="Reverse" />
+      </functions>
+    </inspection_tool>
   </profile>
 </component>
