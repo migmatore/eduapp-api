@@ -2,6 +2,7 @@ package middleware
 
 import (
 	"fmt"
+	"strings"
 	"time"
 	"user/eduAppApi/db"
 	"user/eduAppApi/models"
@@ -12,21 +13,21 @@ import (
 	"net/http"
 )
 
-const SIGNING_KEY = "secret"
+const SingingKey = "secret"
 
-func GenerateToken(userId uint, login string, role string) (string, error) {
+func GenerateToken(userId uint, login string, accessLevel string) (string, error) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
-		"login": login,
-		"role": role,
-		"exp": time.Now().Add(time.Minute * 2).Unix(),
+		"login":        login,
+		"access_level": accessLevel,
+		"exp":          time.Now().Add(time.Minute * 2).Unix(),
 	})
 
-	tokenString, err := token.SignedString([]byte(SIGNING_KEY))
+	tokenString, err := token.SignedString([]byte(SingingKey))
 
 	_token := models.TokenModel{
-		UserId: userId,
-		Token: tokenString,
-		Role: role,
+		UserId:      userId,
+		Token:       tokenString,
+		AccessLevel: accessLevel,
 	}
 
 	db.DB.Create(&_token)
@@ -34,7 +35,7 @@ func GenerateToken(userId uint, login string, role string) (string, error) {
 	return tokenString, err
 }
 
-func MiddlewareHandler(role ...string) gin.HandlerFunc {
+func MiddlewareHandler(accessLevel ...string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		tokenString := c.GetHeader("Authorization")
 
@@ -43,27 +44,67 @@ func MiddlewareHandler(role ...string) gin.HandlerFunc {
 				return nil, fmt.Errorf("Unexpected signing method: %v", token.Header["alg"])
 			}
 
-			return []byte(SIGNING_KEY), nil
+			return []byte(SingingKey), nil
 		})
+		if err != nil {
+			fmt.Errorf("Token not found", err.Error())
+
+			c.JSON(http.StatusNotFound, gin.H{
+				"status":  http.StatusNotFound,
+				"message": "Token not found",
+				"error":   err.Error(),
+			})
+
+			c.Abort()
+
+			return
+		}
 
 		if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid {
-			if claims["role"] == role[0] {
-				c.Next()
-			} else if claims["role"] == role[0] && claims["role"] == role[1] {
-				c.Next()
-			} else {
-				fmt.Println("Users isn't admin")
-				c.Abort()
+			var _accessLevels []string
 
-				return
+			for i, j := range claims {
+				if i == "access_level" {
+					_splitAccessLevels := strings.Split(j.(string), ",")
+					fmt.Println(_splitAccessLevels)
+
+					for _, i := range _splitAccessLevels {
+						_accessLevels = append(_accessLevels, i)
+					}
+
+					fmt.Println(_accessLevels)
+				}
 			}
 
+			for i := range _accessLevels {
+				if _accessLevels[i] == accessLevel[i] {
+					c.JSON(http.StatusOK, gin.H{
+						"status":  http.StatusOK,
+						"message": "Access is allowed",
+					})
+
+					c.Next()
+
+					return
+				}
+			}
+
+			c.JSON(http.StatusLocked, gin.H{
+				"status":  http.StatusLocked,
+				"message": "You must have access levels: " + accessLevel[0] + ", " + accessLevel[1],
+			})
+
+			c.Abort()
+
+			return
 		} else {
 			fmt.Println(err)
+
 			c.JSON(http.StatusUnauthorized, gin.H{
-				"status": http.StatusUnauthorized,
+				"status":  http.StatusUnauthorized,
 				"message": "user needs to be signed",
 			})
+
 			c.Abort()
 
 			return

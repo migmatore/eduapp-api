@@ -6,7 +6,7 @@ import (
 
 type TokenModel struct {
 	gorm.Model
-	UserId uint        `json:"user_id"`
-	Token  string      `json:"token"`
-	Role   string      `json:"role"`
+	UserId      uint   `json:"user_id"`
+	Token       string `json:"token"`
+	AccessLevel string `json:"access_level"`
 }

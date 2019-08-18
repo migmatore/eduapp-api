@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"sort"
@@ -13,6 +12,8 @@ import (
 )
 
 func CreateUserHandler(c *gin.Context) {
+	firstName := c.PostForm("first_name")
+	lastName := c.PostForm("last_name")
 	login := c.PostForm("login")
 	password := c.PostForm("password")
 
@@ -20,8 +21,11 @@ func CreateUserHandler(c *gin.Context) {
 	var sortedUsers []string
 
 	_user := models.UserModel{
-		Login: login,
-		Password: password,
+		FirstName: firstName,
+		LastName:  lastName,
+		Login:     login,
+		Password:  password,
+		Role:      "user",
 	}
 
 	db.DB.Find(&users)
@@ -30,32 +34,65 @@ func CreateUserHandler(c *gin.Context) {
 		sortedUsers = append(sortedUsers, strings.ToLower(user.Login))
 	}
 
-	utils.SortStrings(sortedUsers)
-
-	if sort.StringsAreSorted(sortedUsers) && !(0 > len(sortedUsers)){
-		if utils.BinSearchString(sortedUsers, strings.ToLower(login), 0, len(sortedUsers)) {
-			c.JSON(http.StatusNotFound, gin.H{
-				"status": http.StatusNotFound,
-				"message": "user couldn't be created",
-			})
-
-			return
-		} else {
+	if len(sortedUsers) <= 1 {
+		if len(sortedUsers) == 0 {
 			db.DB.Create(&_user)
 
 			c.JSON(http.StatusCreated, gin.H{
-				"status": http.StatusCreated,
+				"status":  http.StatusCreated,
 				"message": "user created",
 			})
 
 			return
-		}
-	}
+		} else {
+			for _, userLogin := range sortedUsers {
+				if userLogin == strings.ToLower(login) {
+					c.JSON(http.StatusNotFound, gin.H{
+						"status":  http.StatusNotFound,
+						"message": "user couldn't be created",
+					})
 
-	c.JSON(http.StatusNotFound, gin.H{
-		"status": http.StatusNotFound,
-		"message": "array not sorted",
-	})
+					return
+				} else {
+					db.DB.Create(&_user)
+
+					c.JSON(http.StatusCreated, gin.H{
+						"status":  http.StatusCreated,
+						"message": "user created",
+					})
+				}
+			}
+		}
+	} else {
+		utils.SortStrings(sortedUsers)
+
+		if sort.StringsAreSorted(sortedUsers) && !(0 > len(sortedUsers) || 0 == len(sortedUsers)) {
+			if utils.BinSearchString(sortedUsers, strings.ToLower(login), 0, len(sortedUsers)) {
+				c.JSON(http.StatusNotFound, gin.H{
+					"status":  http.StatusNotFound,
+					"message": "user couldn't be created",
+				})
+
+				return
+			} else {
+				db.DB.Create(&_user)
+
+				c.JSON(http.StatusCreated, gin.H{
+					"status":  http.StatusCreated,
+					"message": "user created",
+				})
+
+				return
+			}
+		}
+
+		c.JSON(http.StatusNotFound, gin.H{
+			"status":  http.StatusNotFound,
+			"message": "array not sorted",
+		})
+
+		return
+	}
 }
 
 func LoginUserHandler(c *gin.Context) {
@@ -70,7 +107,7 @@ func LoginUserHandler(c *gin.Context) {
 
 	if len(users) <= 0 {
 		c.JSON(http.StatusNotFound, gin.H{
-			"status": http.StatusNotFound,
+			"status":  http.StatusNotFound,
 			"message": "Users not found!",
 		})
 
@@ -83,7 +120,7 @@ func LoginUserHandler(c *gin.Context) {
 
 	utils.SortStrings(sortedUsers)
 
-	if sort.StringsAreSorted(sortedUsers) && !(0 > len(sortedUsers)){
+	if sort.StringsAreSorted(sortedUsers) && !(0 > len(sortedUsers)) {
 		search := utils.BinSearchString(sortedUsers, login, 0, len(sortedUsers))
 
 		if search {
@@ -96,9 +133,9 @@ func LoginUserHandler(c *gin.Context) {
 				}
 
 				c.JSON(http.StatusCreated, gin.H{
-					"status": http.StatusCreated,
+					"status":  http.StatusCreated,
 					"message": "token created",
-					"token": token,
+					"token":   token,
 				})
 
 				return
@@ -106,24 +143,51 @@ func LoginUserHandler(c *gin.Context) {
 		}
 
 		c.JSON(http.StatusNotFound, gin.H{
-			"status": http.StatusNotFound,
-			"message": "array not sorted",
+			"status":  http.StatusNotFound,
+			"message": "user not found",
 		})
 
 		return
 	}
 
 	c.JSON(http.StatusNotFound, gin.H{
-		"status": http.StatusNotFound,
+		"status":  http.StatusNotFound,
 		"message": "user not found",
 	})
+
+	return
 }
 
 // ****************
 // TODO: UpdateUserHandler
 // ****************
 func UpdateUserHandler(c *gin.Context) {
+	id := c.PostForm("id")
+	firstName := c.PostForm("first_name")
+	lastName := c.PostForm("last_name")
+	login := c.PostForm("login")
+	password := c.PostForm("password")
 
+	var user models.UserModel
+
+	db.DB.First(&user, id)
+
+	db.DB.Model(&user).Updates(models.UserModel{
+		FirstName: firstName,
+		LastName:  lastName,
+		Login:     login,
+		Password:  password,
+		Role:      "user",
+	})
+
+	db.DB.Save(&user)
+
+	c.JSON(http.StatusOK, gin.H{
+		"status":  http.StatusOK,
+		"message": "user was updated",
+	})
+
+	return
 }
 
 func DeleteUserHandler(c *gin.Context) {
@@ -131,21 +195,12 @@ func DeleteUserHandler(c *gin.Context) {
 
 	var user models.UserModel
 
-	err := db.DB.Unscoped().Delete(&user, userId)
-	if err !=  nil {
-		fmt.Errorf("Error: %v", err.Error)
-
-		c.JSON(http.StatusNotFound, gin.H{
-			"status": http.StatusNotFound,
-			"message": "user not found",
-			"error": err.Error,
-		})
-
-		return
-	}
+	db.DB.Unscoped().Delete(&user, userId)
 
 	c.JSON(http.StatusOK, gin.H{
-		"status": http.StatusOK,
+		"status":  http.StatusOK,
 		"message": "user deleted",
 	})
+
+	return
 }

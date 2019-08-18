@@ -11,14 +11,18 @@ func BinSearch(data []int, n int, begin int, end int) bool {
 		if n == data[mid] {
 			return true
 		} else if n < data[mid] {
-			return BinSearch(data, n, begin, mid - 1)
+			return BinSearch(data, n, begin, mid-1)
 		} else {
-			return BinSearch(data, n, mid + 1, end)
+			return BinSearch(data, n, mid+1, end)
 		}
 	}
 }
 
 func BinSearchString(data []string, n string, begin int, end int) bool {
+	if (begin == 0 && end == 1) && (n == data[0]) {
+		return true
+	}
+
 	if begin > end {
 		return false
 	} else {
@@ -27,9 +31,9 @@ func BinSearchString(data []string, n string, begin int, end int) bool {
 		if n == data[mid] {
 			return true
 		} else if strings.Compare(n, data[mid]) < 0 {
-			return BinSearchString(data, n, begin, mid - 1)
+			return BinSearchString(data, n, begin, mid-1)
 		} else {
-			return BinSearchString(data, n, mid + 1, end)
+			return BinSearchString(data, n, mid+1, end)
 		}
 	}
 }
