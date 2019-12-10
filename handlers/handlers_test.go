@@ -28,5 +28,4 @@ func TestLoginUserHandler(t *testing.T) {
 	//if err != nil {
 	//	fmt.Errorf("Error: %v", err.Error())
 	//}
-
 }

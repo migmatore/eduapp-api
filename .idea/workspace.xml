@@ -2,52 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd64417e-f178-40dd-bcba-4d076cae0639" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/kazak.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/chat.WJMuAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/schooltests.LftDUA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/tests.IU6SBg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init_db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/init_db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/handlers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/handlers_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/user_handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/user_handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/middleware.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/token_model.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/token_model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/search.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/middleware_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/middleware_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/post_model.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/post_model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/routers.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/routers.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,6 +68,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go Application" />
+        <option value="HTML File" />
         <option value="Go File" />
       </list>
     </option>
@@ -111,6 +78,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
     <option name="urls">
       <list>
         <option value="file://E:/Go" />
@@ -118,18 +86,39 @@
       </list>
     </option>
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\kazak\go\src\user\eduAppApi\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1Omgsv3g6laFPfVFordyIwZTIer" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lessons" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
@@ -140,15 +129,49 @@
       <recent name="C:\Users\kazak\go\src\user\eduAppApi\templates\admin" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="api/v1/tag/create" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="title=test" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/v1/tag" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -169,35 +192,32 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build" />
       <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="HTTP Request.rest-api#1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build" />
+        <item itemvalue="HTTP Request.rest-api#1" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5ed8d6f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5ed8d6f1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@a239b85" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,5 +235,30 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update to version 0.0.6-alpha" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to version 0.0.6-alpha" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="243" key="#Go_Modules_(vgo)" timestamp="1576013248024">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state x="392" y="243" key="#Go_Modules_(vgo)/0.0.1600.1170@0.0.1600.1170" timestamp="1576013248024" />
+    <state x="554" y="374" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576013023075">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state x="554" y="374" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.1170@0.0.1600.1170" timestamp="1576013023075" />
+    <state x="1210" y="372" key="#com.intellij.ide.util.MemberChooser" timestamp="1576013860153">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state x="1210" y="372" key="#com.intellij.ide.util.MemberChooser/0.0.1600.1170@0.0.1600.1170" timestamp="1576013860153" />
+    <state x="480" y="312" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576013019361" />
+    <state x="480" y="312" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1600.1200" timestamp="1576013019361" />
+    <state x="621" y="294" key="FileChooserDialogImpl" timestamp="1576013019361" />
+    <state x="621" y="294" key="FileChooserDialogImpl/1600.1200" timestamp="1576013019361" />
   </component>
 </project>

@@ -4,6 +4,6 @@ import (
 	"testing"
 )
 
-func TestMiddlewareHandlerre(t *testing.T) {
-	//req, err := http.NewRequest("GET", "/", nil)
+func TestMiddlewareHandler(t *testing.T) {
+
 }

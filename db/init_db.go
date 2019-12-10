@@ -23,4 +23,5 @@ func InitMigration() {
 	DB.AutoMigrate(&models.UserModel{})
 	DB.AutoMigrate(&models.TokenModel{})
 	DB.AutoMigrate(&models.PostModel{})
+	DB.AutoMigrate(&models.TagModel{})
 }

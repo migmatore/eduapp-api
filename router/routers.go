@@ -13,7 +13,10 @@ func SetupRouter() *gin.Engine {
 
 	api := r.Group("/api/v1")
 	{
-		api.GET("/admin")
+		admin := api.Group("/admin")
+		{
+			admin.GET("/")
+		}
 
 		user := api.Group("/user")
 		{
@@ -29,6 +32,12 @@ func SetupRouter() *gin.Engine {
 
 			post.GET("/")
 			post.POST("/create")
+		}
+
+		tag := api.Group("/tag")
+		{
+			tag.GET("/", handlers.GetTagsHandler)
+			tag.POST("/create", handlers.CreateTagHandler)
 		}
 	}
 

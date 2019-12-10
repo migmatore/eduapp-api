@@ -60,6 +60,8 @@ func CreateUserHandler(c *gin.Context) {
 						"status":  http.StatusCreated,
 						"message": "user created",
 					})
+
+					return
 				}
 			}
 		}
@@ -158,9 +160,6 @@ func LoginUserHandler(c *gin.Context) {
 	return
 }
 
-// ****************
-// TODO: UpdateUserHandler
-// ****************
 func UpdateUserHandler(c *gin.Context) {
 	id := c.PostForm("id")
 	firstName := c.PostForm("first_name")
