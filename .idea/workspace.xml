@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd64417e-f178-40dd-bcba-4d076cae0639" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/kazak.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48fc3fd3-32e9-423d-8af9-c429b140f3fd/storage_v2/_src_/database/testEduAppApi.HXti3Q/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init_db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/init_db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/handlers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/handlers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/user_handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/user_handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/middleware_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/middleware_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/post_model.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/post_model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/middleware.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/routers.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/routers.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,31 +29,49 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - testEduAppApi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - testEduAppApi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - testEduAppApi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="testEduAppApi: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - testEduAppApi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="testEduAppApi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="testEduAppApi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="PostgreSQL - testEduAppApi@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="postgres@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="testEduAppApi: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
@@ -175,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="eduAppApi" />
       <working_directory value="$PROJECT_DIR$" />
@@ -202,9 +216,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build" />
         <item itemvalue="HTTP Request.rest-api#1" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +227,26 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost [2]" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost [2]" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2fbd2d38" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost [2]" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2fe3e7ce" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -229,8 +262,34 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -238,7 +297,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update to version 0.0.6-alpha" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to version 0.0.6-alpha" />
+    <MESSAGE value="update to version 0.0.8-alpha&#10;restructuring project:&#10;1. Add a &quot;config&quot; folder and config.toml&#10;2. Add an &quot;app&quot; folder, apiserver.go and config.go&#10;3. Add go.mod" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to version 0.0.8-alpha&#10;restructuring project:&#10;1. Add a &quot;config&quot; folder and config.toml&#10;2. Add an &quot;app&quot; folder, apiserver.go and config.go&#10;3. Add go.mod" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -248,6 +308,10 @@
       <screen x="0" y="0" width="1600" height="1170" />
     </state>
     <state x="392" y="243" key="#Go_Modules_(vgo)/0.0.1600.1170@0.0.1600.1170" timestamp="1576013248024" />
+    <state x="392" y="244" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577294212382">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state x="392" y="244" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.1170@0.0.1600.1170" timestamp="1577294212382" />
     <state x="554" y="374" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576013023075">
       <screen x="0" y="0" width="1600" height="1170" />
     </state>
@@ -258,7 +322,67 @@
     <state x="1210" y="372" key="#com.intellij.ide.util.MemberChooser/0.0.1600.1170@0.0.1600.1170" timestamp="1576013860153" />
     <state x="480" y="312" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576013019361" />
     <state x="480" y="312" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1600.1200" timestamp="1576013019361" />
+    <state x="336" y="51" key="CommitChangelistDialog2" timestamp="1576014476989">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state x="336" y="51" key="CommitChangelistDialog2/0.0.1600.1170@0.0.1600.1170" timestamp="1576014476989" />
+    <state width="247" height="195" key="DatabaseViewActions_Filter" timestamp="1577294155462">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="247" height="195" key="DatabaseViewActions_Filter/0.0.1600.1170@0.0.1600.1170" timestamp="1577294155462" />
     <state x="621" y="294" key="FileChooserDialogImpl" timestamp="1576013019361" />
     <state x="621" y="294" key="FileChooserDialogImpl/1600.1200" timestamp="1576013019361" />
+    <state width="1557" height="368" key="GridCell.Tab.0.bottom" timestamp="1577306181803">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="368" key="GridCell.Tab.0.bottom/0.0.1600.1170@0.0.1600.1170" timestamp="1577306181803" />
+    <state width="1557" height="368" key="GridCell.Tab.0.center" timestamp="1577306181803">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="368" key="GridCell.Tab.0.center/0.0.1600.1170@0.0.1600.1170" timestamp="1577306181803" />
+    <state width="1557" height="368" key="GridCell.Tab.0.left" timestamp="1577306181803">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="368" key="GridCell.Tab.0.left/0.0.1600.1170@0.0.1600.1170" timestamp="1577306181803" />
+    <state width="1557" height="368" key="GridCell.Tab.0.right" timestamp="1577306181803">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="368" key="GridCell.Tab.0.right/0.0.1600.1170@0.0.1600.1170" timestamp="1577306181803" />
+    <state width="1557" height="366" key="GridCell.Tab.1.bottom" timestamp="1577305332900">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="366" key="GridCell.Tab.1.bottom/0.0.1600.1170@0.0.1600.1170" timestamp="1577305332900" />
+    <state width="1557" height="366" key="GridCell.Tab.1.center" timestamp="1577305332900">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="366" key="GridCell.Tab.1.center/0.0.1600.1170@0.0.1600.1170" timestamp="1577305332900" />
+    <state width="1557" height="366" key="GridCell.Tab.1.left" timestamp="1577305332900">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="366" key="GridCell.Tab.1.left/0.0.1600.1170@0.0.1600.1170" timestamp="1577305332900" />
+    <state width="1557" height="366" key="GridCell.Tab.1.right" timestamp="1577305332900">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state width="1557" height="366" key="GridCell.Tab.1.right/0.0.1600.1170@0.0.1600.1170" timestamp="1577305332900" />
+    <state x="392" y="313" key="Vcs.Push.Dialog.v2" timestamp="1576014499087">
+      <screen x="0" y="0" width="1600" height="1170" />
+    </state>
+    <state x="392" y="313" key="Vcs.Push.Dialog.v2/0.0.1600.1170@0.0.1600.1170" timestamp="1576014499087" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/middleware/middleware.go</url>
+          <line>97</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/middleware/middleware.go</url>
+          <line>98</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

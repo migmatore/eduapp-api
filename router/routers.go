@@ -7,6 +7,8 @@ import (
 )
 
 func SetupRouter() *gin.Engine {
+	gin.ForceConsoleColor()
+
 	r := gin.Default()
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
@@ -27,10 +29,14 @@ func SetupRouter() *gin.Engine {
 		}
 
 		post := api.Group("/post")
-		post.Use(middleware.MiddlewareHandler("admin", "user"))
+		//post.Use(middleware.MiddlewareHandler("user"))
 		{
 
-			post.GET("/")
+			postGet := post.Group("/")
+			postGet.Use(middleware.MiddlewareHandler("admin", "user"))
+			{
+				postGet.GET("/")
+			}
 			post.POST("/create")
 		}
 

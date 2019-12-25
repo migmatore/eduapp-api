@@ -65,7 +65,7 @@ func MiddlewareHandler(accessLevel ...string) gin.HandlerFunc {
 
 			for i, j := range claims {
 				if i == "access_level" {
-					_splitAccessLevels := strings.Split(j.(string), ",")
+					_splitAccessLevels := strings.Split(j.(string), ", ")
 					fmt.Println(_splitAccessLevels)
 
 					for _, i := range _splitAccessLevels {
@@ -76,23 +76,43 @@ func MiddlewareHandler(accessLevel ...string) gin.HandlerFunc {
 				}
 			}
 
-			for i := range _accessLevels {
-				if _accessLevels[i] == accessLevel[i] {
-					c.JSON(http.StatusOK, gin.H{
-						"status":  http.StatusOK,
-						"message": "Access is allowed",
-					})
+			if len(accessLevel) > 1 {
+				for i := range _accessLevels {
+					if _accessLevels[i] == accessLevel[i] {
+						c.JSON(http.StatusOK, gin.H{
+							"status":  http.StatusOK,
+							"message": "Access is allowed",
+						})
 
-					c.Next()
+						c.Next()
 
-					return
+						return
+					}
 				}
-			}
 
-			c.JSON(http.StatusLocked, gin.H{
-				"status":  http.StatusLocked,
-				"message": "You must have access levels: " + accessLevel[0] + ", " + accessLevel[1],
-			})
+				c.JSON(http.StatusLocked, gin.H{
+					"status":  http.StatusLocked,
+					"message": "You must have access levels: " + accessLevel[0] + ", " + accessLevel[1],
+				})
+			} else {
+				for i := range _accessLevels {
+					if _accessLevels[i] == accessLevel[0] {
+						c.JSON(http.StatusOK, gin.H{
+							"status":  http.StatusOK,
+							"message": "Access is allowed",
+						})
+
+						c.Next()
+
+						return
+					}
+				}
+
+				c.JSON(http.StatusLocked, gin.H{
+					"status":  http.StatusLocked,
+					"message": "You must have access levels: " + accessLevel[0],
+				})
+			}
 
 			c.Abort()
 
